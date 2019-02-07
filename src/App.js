@@ -47,8 +47,33 @@ class App extends Component {
                         </h2>
                         <p>&nbsp;</p>
                         <div class="box">
-                            Plaforms: Oculus Go, Rift (future)
+                            <p>Plaforms: Oculus Go, Rift (future)</p>
                         </div>
+
+
+                        <div className="releases">
+                            <h2 class="subtitle">
+                                <b>News:</b>
+                            </h2>
+                            <p>
+                                <b>2019-02-07 [Announcement]:</b>
+                            </p>
+                            <p>Happy to announce Dodgeblock VR is now in Beta for the Oculus Go. <br/> If you'd like early access, please <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=YpW2sDEzL0OUhERV1gX7c1ydkbxQFU9PrWOu7c3jAB1UQkRLS0NCVE9JREQxODBGWDlNNUlPSEtGNC4u" target="_blank">sign-up</a>.</p>
+                            <p>&nbsp;</p>
+                            <div className="content">
+                                <p>
+                                    <b>2019-02-06 [Beta Release]:</b>
+                                </p>
+                                <ul>
+                                    <li>Added: new pause screen when clicking the <i>back button</i> on the Oculus Go controller. </li>
+                                    <li>Fixed: issue when Oculus Go had the controller set to <i>left-handed</i> mode.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p>&nbsp;</p>
+                        <p>&nbsp;</p>
+                        <p><a class="button is-primary" href="https://forms.office.com/Pages/ResponsePage.aspx?id=YpW2sDEzL0OUhERV1gX7c1ydkbxQFU9PrWOu7c3jAB1UQkRLS0NCVE9JREQxODBGWDlNNUlPSEtGNC4u" target="_blank" title="Contact Us">Request access, or submit feedback</a></p>
+
                     </div>
                 </div>
             </div>

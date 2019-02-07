@@ -25,6 +25,14 @@ body {
     color: #fff;
 }
 
+a, a:visited, a:focus {
+    color: yellow;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
 .title, .subtitle {
     color: white;
 }
@@ -86,6 +94,10 @@ body {
 .box {
     background-color: $info;
     color: #fff;
+}
+
+.releases {
+    text-align: left;
 }
 
 @media only screen and (max-width: 500px) {
