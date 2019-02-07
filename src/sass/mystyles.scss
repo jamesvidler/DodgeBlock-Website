@@ -1,10 +1,11 @@
 @charset "utf-8";
 
-@import url('https://fonts.googleapis.com/css?family=Faster+One');
+@import url('https://fonts.googleapis.com/css?family=Bungee+Outline');
 
 //mine
-$family-secondary: "Faster One", sans-serif;
+$family-secondary: "Bungee Outline", sans-serif;
 $info: rgb(80, 5, 165);
+
 
 // Update Bulma's global variables
 
@@ -12,16 +13,79 @@ $info: rgb(80, 5, 165);
 
 @import "../../node_modules/bulma/bulma.sass"; 
 
+
+
 //site styles
+body {
+    background-image: url('/img/cube-field-web.png');
+    background-position: center center;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+.title, .subtitle {
+    color: white;
+}
+
+.subtitle {
+    margin-top: 1rem!important;
+}
+
+.hero-head, .hero-foot {
+    height: 100px;
+    display: flex;
+}
+
 .pageTitle {
     font-family: $family-secondary;
     //padding-top: 2.5rem;
     font-size: 4rem;
     color: cyan!important;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-column {
+    margin: 0 auto;
+    padding: 5%;
+    background-color: #000000a6;
 }
 
 .hero-foot {
-    padding-bottom: 1rem;
+    p {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.youtube-container {
+    padding-bottom: 2rem;
+}
+
+.youtube {
+    position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+    height: 0;
+    
+    iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%; 
+    }
+}
+
+.box {
+    background-color: $info;
+    color: #fff;
 }
 
 @media only screen and (max-width: 500px) {
@@ -29,5 +93,20 @@ $info: rgb(80, 5, 165);
       font-size: 2.5rem;
       padding-left: 1rem;
       padding-right: 1rem;
+    }
+
+    
+
+    .hero-body {
+        padding: 0;
+
+        .title {
+            font-size: 1.5rem;
+        }
+
+        .subtitle {
+            font-size: 1rem;
+        }
+
     }
   }
