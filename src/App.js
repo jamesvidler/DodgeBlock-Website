@@ -68,6 +68,7 @@ class App extends Component {
                                 <li>Feature: Proximity points score - get more points when you get closer to objects</li>
                                 <li>Improvement: Balance difficulty - gets too hard too fast</li>
                                 <li>Improvement: SFX updates - courtesy of <i>chlampf</i></li>
+                                <li>Improvement: Music updates - courtesy of <i>chlampf</i></li>
                                 <li>Improvement: Environment particles</li>
                                 <li>Improvement: Better instructions for how flight control works</li>
                                 <li>Bug fix: Some Rings spawn too close to objects </li>
