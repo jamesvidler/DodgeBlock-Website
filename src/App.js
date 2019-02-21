@@ -57,6 +57,22 @@ class App extends Component {
                             </h2>
 
                             <p>
+                                <b>2019-02-21 [Sneak Peek]:</b>
+                            </p>
+                            <p>Coming soon. Slow-mo, turbo, updated SFX and music, and various other tweaks!</p>
+                            <div className="youtube-container">
+                                <div className="youtube">
+                                    <YouTube
+                                        videoId="WNF913W0j9c"
+                                        opts={opts}
+                                        onReady={this._onReady}
+                                    />
+                                </div>
+                            </div>
+                            <p>&nbsp;</p>
+
+
+                            <p>
                                 <b>2019-02-16 [Roadmap]:</b>
                             </p>
                             <p>Thank you to all beta users who have provided feedback. I have the following updates planned in the coming weeks ;)</p>
