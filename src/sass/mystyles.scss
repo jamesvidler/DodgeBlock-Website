@@ -7,6 +7,7 @@ $family-secondary: "Bungee Outline", sans-serif;
 $info: rgb(80, 5, 165);
 
 
+
 // Update Bulma's global variables
 
 
@@ -121,4 +122,17 @@ a, a:visited, a:focus {
         }
 
     }
+
+    .is-warning {
+        font-size: 20px!important;
+    }
+  }
+
+  .is-warning {
+      background-color:#ff9900 !important;
+      color: white !important;
+  }
+
+  .oculus-logo {
+      max-width: 150px;
   }
