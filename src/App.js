@@ -36,7 +36,7 @@ class App extends Component {
                         </div>
 
                         <h1 class="title">
-                            Coming soon...
+                            Coming to Oculus Go<br/> August 23rd 2019
                         </h1>
 
                         <h1 class="title">
