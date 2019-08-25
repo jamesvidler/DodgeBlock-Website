@@ -36,7 +36,7 @@ class App extends Component {
                         </div>
 
                         <h1 class="title">
-                            Coming to Oculus Go<br/> August 23rd 2019
+                            Available Now <br/> for the Oculus Go
                         </h1>
 
                         <h1 class="title">
@@ -46,7 +46,10 @@ class App extends Component {
                             No two runs are ever the same. How long can you last?
                         </h2>
                         <p>&nbsp;</p>
-                        <p><a class="button is-warning is-large" href="https://www.reddit.com/r/DodgeblockVR/" target="_blank" title="Follow">Join the Discussion on Reddit</a></p>
+                        <p><a class="button is-warning is-large" href="https://www.oculus.com/experiences/go/2276532692364976" target="_blank" title="Follow">Play Now</a></p>
+                        <p>&nbsp;</p>
+                        <p>&nbsp;</p>
+                        <p><a class="button is-info" href="https://www.reddit.com/r/DodgeblockVR/" target="_blank" title="Follow">Join the Discussion on Reddit</a></p>
                         <p>&nbsp;</p>
                         <p>&nbsp;</p>
                         
