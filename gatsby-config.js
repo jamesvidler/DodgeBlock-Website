@@ -4,6 +4,7 @@ module.exports = {
     description: `Fly through a retro-inspired void while dodging endless obstacles.
     This is a trippy and challenging endless runner/flyer, inspired by classic arcade games and re-imagined for VR using procedural generation. Dodge the blocks and fly through the rings to extend your time. No two runs are ever the same. How long can you last?`,
     author: `@jameskvidler`,
+    image: `https://dodgeblockvr.com/images/logo.png`
   },
   plugins: [
     `gatsby-plugin-sass`,
