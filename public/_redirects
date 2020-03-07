@@ -1,6 +1,0 @@
-# Redirect domain aliases to primary domain
-https://dodgeblock.ca/* https://dodgeblockvr.com/:splat 301!
-https://www.dodgeblockvr.com/* https://dodgeblockvr.com/:splat 301!
-
-# Optional: Redirect default Netlify subdomain to primary domain
-https://nostalgic-brattain-7e342a.netlify.com/* https://dodgeblockvr.com/:splat 301!
