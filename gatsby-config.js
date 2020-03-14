@@ -1,3 +1,7 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   siteMetadata: {
     title: `Dodgeblock - An Endless Runner, Re-imagined for VR`,
@@ -7,6 +11,15 @@ module.exports = {
     image: `https://dodgeblockvr.com/images/logo.png`
   },
   plugins: [
+    {
+      resolve: `gatsby-source-oculus-leaderboards`,
+      options: {
+        oculus_appId: process.env.OCULUS_APPID,
+        oculus_appSecret: process.env.OCULUS_APPSECRET,
+        oculus_leaderboard: `Highest_Score`,
+        limit: 10 //optional
+      }
+    },
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     {
