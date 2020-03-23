@@ -1,0 +1,14 @@
+{
+    "name": "gatsby-source-oculus-leaderboards",
+    "private": true,
+    "description": "Oculus Leaderboard Source Plugin for Gatsby",
+    "version": "0.1.0",
+    "author": "James Vidler <jameskvidler@gmail.com>",
+    "keywords": [
+      "gatsby"
+    ],
+    "license": "MIT",
+    "dependencies": {
+  
+    }
+  }
