@@ -44,7 +44,7 @@ const Hero = ({ offset, factor = 1 }: { offset: number; factor?: number }) => {
         <SVG icon="cube" width={16} stroke color="icon_darkest" left="30%" top="65%" />
         <SVG icon="cube"  hiddenMobile width={16} stroke color="icon_pink" left="28%" top="15%" />
         <SVG icon="circle" width={6} color="icon_yellow" left="75%" top="10%" />
-        <SVG icon="cube" hiddenMobile width={8} color="icon_darkest" left="45%" top="10%" />
+        <SVG icon="cube"  width={8} color="icon_darkest" left="45%" top="10%" />
       </UpDownWide>
       <SVG icon="circle" hiddenMobile width={24} color="icon_yellow" left="5%" top="70%" />
       <SVG icon="circle" width={6} color="icon_yellow" left="4%" top="20%" />
@@ -58,7 +58,7 @@ const Hero = ({ offset, factor = 1 }: { offset: number; factor?: number }) => {
       <SVG icon="cube" hiddenMobile width={64} color="icon_purple" left="5%" top="90%" />
       <SVG icon="cube" width={6} color="icon_darkest" left="10%" top="10%" />
       <SVG icon="cube" width={6} color="icon_darkest" left="12%" top="10%" />
-      <SVG icon="cube" width={12} color="icon_darkest" left="40%" top="30%" />
+      <SVG icon="cube" hiddenMobile width={12} color="icon_darkest" left="40%" top="30%" />
       {/* <SVG icon="cube" width={16} stroke color="icon_darker" left="10%" top="50%" /> */}
       <SVG icon="cube" width={8} stroke color="icon_darker" left="80%" top="70%" />
     </Divider>

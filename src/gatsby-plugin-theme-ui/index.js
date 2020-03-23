@@ -116,7 +116,7 @@ export default {
     },
     h1: {
       ...tailwind.styles.h1,
-      fontSize: [5, 6, 8],
+      fontSize: [6, 7, 8],
       mt: 2,
       mb: 4,
       //textShadow: `rgba(255, 255, 255, 0.15) 0px 5px 35px`,
