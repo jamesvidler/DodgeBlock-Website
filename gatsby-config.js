@@ -1,16 +1,74 @@
-require("dotenv").config({
-  path: `.env.${process.env.NODE_ENV}`,
+require(`dotenv`).config({
+  path: `.env`,
 })
 
 module.exports = {
   siteMetadata: {
-    title: `Dodgeblock - An Endless Runner, Re-imagined for VR`,
-    description: `Fly through a retro-inspired void while dodging endless obstacles.
-    This is a trippy and challenging endless runner/flyer, inspired by classic arcade games and re-imagined for VR using procedural generation. Dodge the blocks and fly through the rings to extend your time. No two runs are ever the same. How long can you last?`,
-    author: `@jameskvidler`,
-    image: `https://dodgeblockvr.com/images/logo.png`
+    // You can overwrite values here that are used for the SEO component
+    // Of course you can also add new values here to query them like usual
+    // See all options: https://github.com/LekoArts/gatsby-themes/blob/master/themes/gatsby-theme-cara/gatsby-config.js
+    // Used for the title template on pages other than the index site
+    siteTitle: `Dodgeblock VR`,
+    // Default title of the page
+    siteTitleAlt: `Dodgeblock VR - An immersive endless runner for VR`,
+    // Can be used for e.g. JSONLD
+    siteHeadline: `Cara - Gatsby Theme from @lekoarts`,
+    // Will be used to generate absolute URLs for og:image etc.
+    siteUrl: `https://dodgeblockvr.com`,
+    // Used for SEO
+    siteDescription: `An retro-arcade inspired immersive endless runner for VR, currently released for the Oculus Go`,
+    // Will be set on the <html /> tag
+    siteLanguage: `en`,
+    // Used for og:image and must be placed inside the `static` folder
+    siteImage: `/vr-landscape.png`,
+    // Twitter Handle
+    author: `@jameskvidler`
   },
   plugins: [
+    {
+      resolve: `@lekoarts/gatsby-theme-cara`,
+      // See the theme's README for all available options
+      options: {},
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: process.env.GOOGLE_ANALYTICS_ID,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Cara - @lekoarts/gatsby-theme-cara`,
+        short_name: `Cara`,
+        description: `Playful and Colorful One-Page portfolio featuring Parallax effects and animations`,
+        start_url: `/`,
+        background_color: `#141821`,
+        theme_color: `#f6ad55`,
+        display: `standalone`,
+        icons: [
+          {
+            src: `/android-chrome-192x192.png`,
+            sizes: `192x192`,
+            type: `image/png`,
+          },
+          {
+            src: `/android-chrome-512x512.png`,
+            sizes: `512x512`,
+            type: `image/png`,
+          },
+        ],
+      },
+    },
+    `gatsby-plugin-offline`,
+    `gatsby-plugin-netlify`,
+    `gatsby-background-image`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+    { 
+      resolve: `gatsby-source-filesystem`,
+      options: { name: `images`, path: `./src/images/` }
+    },
     {
       resolve: `gatsby-source-oculus-leaderboards`,
       options: {
@@ -20,31 +78,5 @@ module.exports = {
         limit: 10 //optional
       }
     },
-    `gatsby-plugin-sass`,
-    `gatsby-plugin-react-helmet`,
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
-      },
-    },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
-        start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `src/images/logo.png`, // This path is relative to the root of the site.
-      },
-    },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
   ],
 }
