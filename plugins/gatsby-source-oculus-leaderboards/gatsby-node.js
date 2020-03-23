@@ -129,7 +129,7 @@ exports.onCreateNode = async ({
   // For all OculusLeaderboardEntry nodes that have a profile_url, call createRemoteFileNode
   if (
     node.internal.type === "OculusLeaderboardEntry" &&
-    node.user.profile_url !== null
+    node.user.profile_url
   ) {
     let fileNode = await createRemoteFileNode({
       url: node.user.profile_url, // string that points to the URL of the image
