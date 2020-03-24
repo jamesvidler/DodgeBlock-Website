@@ -88,16 +88,7 @@ const Reviews = ({ offset, factor = 2 }: { offset: number; factor?: number }) =>
                   ⭐⭐⭐⭐⭐ <br/> newellrine
               </Styled.p>
               <Styled.p>
-              💬 <i>"One of the great "In the zone" Go games"</i>
-              </Styled.p>
-            </div>
-
-            <div className="card">
-              <Styled.p>
-                  ⭐⭐⭐⭐⭐ - RichardMcCarty
-              </Styled.p>
-              <Styled.p>
-              💬 <i>"Great little arcade game! Sometimes you feel like a game experience that isn't overly complicated for a quick play session. This one fits the bill quite nicely."</i>
+              💬 <i>"One of the great <b>In the zone</b> Go games"</i>
               </Styled.p>
             </div>
           </div>

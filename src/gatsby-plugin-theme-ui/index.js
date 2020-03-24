@@ -1,7 +1,4 @@
 import { tailwind } from "@theme-ui/presets"
-require('typeface-bungee-outline')
-
-
 
 export default {
   ...tailwind,
@@ -121,7 +118,7 @@ export default {
       mb: 4,
       //textShadow: `rgba(255, 255, 255, 0.15) 0px 5px 35px`,
       letterSpacing: `wide`,
-      color: `#00d0ff`,
+      color: `cyan`,
       fontFamily: `Bungee Outline,sans-serif`,
       textShadow: `#ff00b6 4px 1px 3px`,
       textAlign: `center`
