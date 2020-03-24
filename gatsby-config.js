@@ -39,12 +39,12 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Cara - @lekoarts/gatsby-theme-cara`,
-        short_name: `Cara`,
-        description: `Playful and Colorful One-Page portfolio featuring Parallax effects and animations`,
+        name: `Dodgeblock VR`,
+        short_name: `Dodgeblock`,
+        description: `An retro-arcade inspired immersive endless runner for VR, currently released for the Oculus Go`,
         start_url: `/`,
         background_color: `#141821`,
-        theme_color: `#f6ad55`,
+        theme_color: `#7855f6`,
         display: `standalone`,
         icons: [
           {
