@@ -13,9 +13,6 @@ import '../../..//css/react-video-modal.overrides.css';
 import ModalVideo from 'react-modal-video'
 import OculusImage from "../../../components/oculusImage"
 
-// @ts-ignore
-import Intro from "../sections/intro"
-
 const Hero = ({ offset, factor = 1 }: { offset: number; factor?: number }) => {
 
   const [isOpen, setIsOpen] = useState(false);
@@ -69,7 +66,7 @@ const Hero = ({ offset, factor = 1 }: { offset: number; factor?: number }) => {
         Dodge Block
         </Styled.h1>
         <Styled.p sx={{fontStyle: `italic`, marginBlockEnd: `8px`}}>
-          "One of the <strong>all-time</strong>, great (VR) games to lose yourself in..." 💬
+          "One of the <strong>all-time</strong>, great (VR) games to lose yourself in..."
         </Styled.p>
         <div sx={{marginBottom: `22px`}}>⭐⭐⭐⭐⭐ - newellrine</div>
 

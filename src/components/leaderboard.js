@@ -1,8 +1,9 @@
 /** @jsx jsx */
-import { jsx, Styled } from 'theme-ui'
+import { jsx, Styled, Flex } from 'theme-ui'
 import { React } from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
+
 
 const Leaderboard = () => {
     const data = useStaticQuery(graphql`
@@ -14,8 +15,8 @@ const Leaderboard = () => {
               alias
               profileImg {
                 childImageSharp {
-                  fixed(quality: 90, width: 60, height: 60) {
-                    ...GatsbyImageSharpFixed
+                  fluid(quality: 90, maxWidth: 60, maxHeight: 60) {
+                    ...GatsbyImageSharpFluid
                   }
                 }
               }
@@ -26,8 +27,8 @@ const Leaderboard = () => {
         }
         file(relativePath: { eq: "no-profile-pic.png" }) {
             childImageSharp {
-              fixed(quality: 90, width: 60, height: 60) {
-                ...GatsbyImageSharpFixed
+              fluid(quality: 90, maxWidth: 60, maxHeight: 60) {
+                ...GatsbyImageSharpFluid
               }
             }
           }
@@ -99,8 +100,8 @@ const LeaderboardEntry = ({ id, score, rank, user, no_profile_pic }) => {
             position: `relative`,
             textDecoration: `none`,
             borderRadius: `lg`,
-            px: 4,
-            py: [2, 3],
+            px: 3,
+            py: [2],
             color: `white`,
             background: bg,
             transition: `all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important`,
@@ -118,40 +119,46 @@ const LeaderboardEntry = ({ id, score, rank, user, no_profile_pic }) => {
                 fontWeight: `bold`,
                 fontSize: `36px`,
                 lineHeight: `60px`,
-                position: `relative`
+                position: `relative`,
+                marginLeft:`0px`
             }}>#{rank}</span>
 
             
 
             <span sx={{
-                //fontFamily: `Bungee Outline`,
                 color: `cyan`,
                 display: 'inline-block',
                 color: `#fbff00`,
                 fontSize: `36px`,
                 fontWeight: `bold`,
-                marginLeft: `16px`
+                marginLeft: `12px`
             }}>{score}</span>
 
-            <div>
+            <Flex sx={{
+                alignItems: `center`,
+            }}>
                 <Img sx={{ 
                     borderRadius: `200px`,
                     display: `inline-block`,
-                    boxShadow: `0px 2px 4px #333`
-                    }} 
-                fixed={profileImg.fixed} alt={user.alias} />
-                <span sx={{
-                    marginLeft: `20px`,
+                    boxShadow: `0px 2px 4px #333`,
+                    width: `60px!important`,
+                    whiteSpace: `nowrap`
+                }} 
+                fluid={profileImg.fluid} alt={user.alias} />
+                <div sx={{
+                    marginLeft: `16px`,
                     fontSize: `20px`,
-                    position: `relative`,
-                    top: `-22px`
+                    whiteSpace: `nowrap`,
+                    overflow: `hidden`,
+                    textOverflow: `ellipsis`,
+                    flex: `1`
                 }}>
                     {icon && 
                         icon
                     }
                     {user.alias}
-                </span>
-            </div>
+                </div>
+            </Flex>
             
             
         </div>
