@@ -7,7 +7,7 @@ import SVG from "./svg"
 import { UpDown, UpDownWide } from "../styles/animations"
 // @ts-ignore
 import ProjectsMDX from "../sections/projects"
-import useScreenshot from '../hooks/use-screenshot'
+import useScreenshot from '../../../components/use-screenshot'
 import Img from 'gatsby-image'
 
 const Projects = ({ offset, factor = 2 }: { offset: number; factor?: number }) => {

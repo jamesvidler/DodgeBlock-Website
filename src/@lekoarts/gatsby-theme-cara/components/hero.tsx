@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import React, { useState} from 'react'
-import { jsx } from "theme-ui"
+import { jsx, Styled } from "theme-ui"
 import Divider from "../elements/divider"
 import Inner from "../elements/inner"
 import Content from "../elements/content"
@@ -63,8 +63,17 @@ const Hero = ({ offset, factor = 1 }: { offset: number; factor?: number }) => {
       <SVG icon="cube" width={8} stroke color="icon_darker" left="80%" top="70%" />
     </Divider>
     <Content sx={{ variant: `texts.bigger` }} speed={0.4} offset={offset} factor={factor}>
-      <Inner>
-        <Intro />
+      <Inner sx={{textAlign:`center`}}>
+        
+        <Styled.h1>
+        Dodge Block
+        </Styled.h1>
+        <Styled.p sx={{fontStyle: `italic`, marginBlockEnd: `8px`}}>
+          "One of the <strong>all-time</strong>, great (VR) games to lose yourself in..." 💬
+        </Styled.p>
+        <div sx={{marginBottom: `22px`}}>⭐⭐⭐⭐⭐ - newellrine</div>
+
+
       
         <div sx={{paddingTop: `1rem`}}>
           <a sx={{ 

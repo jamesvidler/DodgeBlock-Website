@@ -43,7 +43,7 @@ const Reviews = ({ offset, factor = 2 }: { offset: number; factor?: number }) =>
                 textDecoration: `none`,
                 borderRadius: `lg`,
                 px: 4,
-                py: [4, 5],
+                py: [2, 3],
                 color: `white`,
                 background: `#160d2d`,
                 transition: `all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important`,
@@ -57,7 +57,7 @@ const Reviews = ({ offset, factor = 2 }: { offset: number; factor?: number }) =>
           >
             <div className="card">
               <Styled.p>
-                ⭐⭐⭐⭐⭐ - Gannan
+                ⭐⭐⭐⭐⭐ <br/> Gannan
               </Styled.p>
               <Styled.p>
                 💬 <i>"It has become one of my favorites in a very short time! It's a great game, the mechanics are great, and the immersion is fantastic!"</i>
@@ -67,7 +67,7 @@ const Reviews = ({ offset, factor = 2 }: { offset: number; factor?: number }) =>
 
             <div className="card">
               <Styled.p>
-                ⭐⭐⭐⭐⭐ - Colonel_Izzi
+                ⭐⭐⭐⭐⭐ <br/> Colonel_Izzi
               </Styled.p>
               <Styled.p>
               💬 <i>"A legitimate retro-scifi-gaming vibe... I feel like I've got my money's worth many times over."</i> 
@@ -76,7 +76,7 @@ const Reviews = ({ offset, factor = 2 }: { offset: number; factor?: number }) =>
 
             <div className="card">
               <Styled.p>
-                  ⭐⭐⭐⭐⭐ - bryan.cao
+                  ⭐⭐⭐⭐⭐ <br/> bryan.cao
               </Styled.p>
               <Styled.p>
               💬 <i>"I like this game a lot! You really get a smooth sense of speed, very satisfying"</i>
@@ -85,7 +85,7 @@ const Reviews = ({ offset, factor = 2 }: { offset: number; factor?: number }) =>
 
             <div className="card">
               <Styled.p>
-                  ⭐⭐⭐⭐⭐ - newellrine
+                  ⭐⭐⭐⭐⭐ <br/> newellrine
               </Styled.p>
               <Styled.p>
               💬 <i>"One of the great "In the zone" Go games"</i>

@@ -18,7 +18,7 @@ const OculusImage = () => {
     query {
       placeholderImage: file(relativePath: { eq: "logo_oculus_go_wordmark-1.png" }) {
         childImageSharp {
-          fixed(width: 150) {
+          fixed(width: 153) {
             ...GatsbyImageSharpFixed
           }
         }

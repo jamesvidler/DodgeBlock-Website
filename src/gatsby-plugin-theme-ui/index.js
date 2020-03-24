@@ -121,7 +121,7 @@ export default {
       mb: 4,
       //textShadow: `rgba(255, 255, 255, 0.15) 0px 5px 35px`,
       letterSpacing: `wide`,
-      color: `#00b8ff`,
+      color: `#00d0ff`,
       fontFamily: `Bungee Outline,sans-serif`,
       textShadow: `#ff00b6 4px 1px 3px`,
       textAlign: `center`
