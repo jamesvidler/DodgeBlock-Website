@@ -12,7 +12,7 @@ module.exports = {
     // Default title of the page
     siteTitleAlt: `Dodgeblock VR - An immersive endless runner for VR`,
     // Can be used for e.g. JSONLD
-    siteHeadline: `Cara - Gatsby Theme from @lekoarts`,
+    siteHeadline: `Dodgeblock VR - An immersive endless runner for VR`,
     // Will be used to generate absolute URLs for og:image etc.
     siteUrl: `https://dodgeblockvr.com`,
     // Used for SEO
