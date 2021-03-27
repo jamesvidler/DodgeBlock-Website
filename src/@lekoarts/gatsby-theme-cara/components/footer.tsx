@@ -14,7 +14,8 @@ const Footer = () => {
     <ThemeFooter>
       <OculusImage />
       <div>
-        Copyright &copy; {new Date().getFullYear()}. All rights reserved.
+        Copyright &copy; {new Date().getFullYear()}. All rights reserved. <br/> 
+        <a href='/privacy-policy.html'>Privacy Policy</a>
       </div>
       <br />
     </ThemeFooter>
